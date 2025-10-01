@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Imgur 上传工具",
+  "description": "一键上传图片到 Imgur 并获取直链。",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "permissions": [
+    "clipboardWrite",
+    "storage"
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}

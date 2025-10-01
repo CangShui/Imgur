@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <title>Imgur 上传</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* 隐藏原生文件选择按钮 */
+    #fileInput {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>✨ Imgur图床</h1>
+	<p class="subtitle">支持粘贴上传</p> <!-- 新增提示 -->
+    <div class="controls">
+      <label class="file-label" for="fileInput">选择图片</label>
+      <input id="fileInput" type="file" accept="image/*">
+      <div id="fileName" class="file-name" style="display:none"></div>
+      <button id="uploadBtn">上传</button>
+    </div>
+    <div id="preview"></div>
+  </div>
+  <div id="toast" class="toast">已复制到剪贴板</div>
+  <script src="popup.js"></script>
+</body>
+</html>
+
